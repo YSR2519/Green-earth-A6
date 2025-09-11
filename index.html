@@ -53,19 +53,40 @@
 </div>
     </header>
     <!-- banner -->
-    <section class="">
-     <div class="bg-green-200">
-      <div class="text-center justify-center py-10">
-        <h1 class="font-bold text-3xl  ">Plant a Tree, Grow a Future</h1>
-        <p class="font-medium mt-4">Join our mission to plant 1 million trees and make the Earth greener for future generations.</p>
-        <button class="btn mt-4 rounded-3xl text-green-500 bg-yellow-300">Get Involved</button>
-      </div>
-      <div class="flex justify-between">
-        <img class="w-80 h-80" src="./assets/hero-leaf1.png" alt="">
-        <img class="w-80 h-80" src="./assets/hero-leaf2.png" alt="">
-      </div>
-     </div>
-    </section>
+   <section>
+  <div class="bg-green-200">
+    <!-- Text Section -->
+    <div class="text-center py-10 px-4">
+      <h1 class="font-bold text-3xl">Plant a Tree, Grow a Future</h1>
+      <p class="font-medium mt-4">
+        Join our mission to plant 1 million trees and make the Earth greener for
+        future generations.
+      </p>
+      <button
+        class="btn mt-4 rounded-3xl text-green-600 bg-yellow-300 font-semibold"
+      >
+        Get Involved
+      </button>
+    </div>
+
+    <!-- Image Section -->
+    <div
+      class="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-6 sm:gap-0 px-4 pb-10"
+    >
+      <img
+        class="w-full max-w-xs sm:w-80 sm:h-80"
+        src="./assets/hero-leaf1.png"
+        alt="Leaf 1"
+      />
+      <img
+        class="w-full max-w-xs sm:w-80 sm:h-80"
+        src="./assets/hero-leaf2.png"
+        alt="Leaf 2"
+      />
+    </div>
+  </div>
+</section>
+
     <!-- card section -->
     <section>
         <h1 class="font-bold text-center text-2xl mt-12">Choose Your Trees</h1>
@@ -89,46 +110,54 @@
         </div>
      </div>
      </section>
+     <!-- our impact -->
+  <section class="bg-green-100">
+  <h1 class="text-center font-bold text-2xl p-5">Our Impact</h1>
+
+  <div class="flex flex-col sm:flex-row sm:justify-around items-center gap-5 sm:gap-0 pb-10">
+    <div class="bg-white w-60 rounded-2xl text-center p-5 shadow-md">
+      <h1 class="text-4xl text-green-600 font-bold">500K+</h1>
+      <p>Trees Planted</p>
+    </div>
+
+    <div class="bg-white w-60 rounded-2xl text-center p-5 shadow-md">
+      <h1 class="text-4xl text-green-600 font-bold">120+</h1>
+      <p>Communities Involved</p>
+    </div>
+
+    <div class="bg-white w-60 rounded-2xl text-center p-5 shadow-md">
+      <h1 class="text-4xl text-green-600 font-bold">30+</h1>
+      <p>Countries Reached</p>
+    </div>
+  </div>
+</section>
+
      <!-- plan tree -->
-      <section class="bg-green-600">
-        <div>
-            <h1 class="text-center font-bold text-2xl text-white p-5">Plant a Tree Today</h1>
-           <div class="text-center">
-            
-               <div class=" ">
-              <input type="text" placeholder="Your name" class="input" /><br><br>
-              <label class="input validator">
-  <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-    <g
-      stroke-linejoin="round"
-      stroke-linecap="round"
-      stroke-width="2.5"
-      fill="none"
-      stroke="currentColor"
-    >
-      <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-    </g>
-  </svg>
-  <input type="email" placeholder="Inter your mail" required />
-</label><br>
-<div class="validator-hint hidden">Enter valid email address</div><br>
-<input type="text" placeholder="Number of trees" class="input" /><br><br>
-        <button class="btn w-80 text-green-500 bg-yellow-300">Donate Now</button>
-        </div>
-        </div><br>
+     <section class="bg-green-800 p-20">
+      <h2 class=" text-center text-2xl text-white font-bold mb-10">Plant a Tree Today</h2>
+       <div class="card bg-green-600 shadow-xl container mx-auto max-w-lg  ">
         
-           </div>
-        
-      </section>
+    <div class="card-body bg-green-600 rounded-md ">
+      
+
+      <form class="flex flex-col gap-4  ">
+        <input type="text" placeholder="Your Name" class="input input-bordered w-full" />
+        <input type="email" placeholder="Your Email" class="input input-bordered w-full" />
+        <input type="number" placeholder="Number of Trees" class="input input-bordered w-full" />
+        <button class="btn btn-success text-green-600 bg-yellow-400 rounded-full">Contribute</button>
+      </form>
+    </div>
+
+     </section>
       <!-- footer -->
-       <section class="bg-green-700 ">
-        <div class=" p-5">
-            <h1 class="text-center ">
-                © 2025 Green Earth. All Rights Reserved.
-            </h1>
-        </div>
-       </section>
+       <section class="bg-green-900">
+  <div class="px-4 sm:px-10 py-4">
+    <h1 class="text-center text-white text-sm sm:text-base">
+      © 2025 Green Earth. All Rights Reserved.
+    </h1>
+  </div>
+</section>
+
     <script src="./js/script.js"></script>
 </body>
 </html>
