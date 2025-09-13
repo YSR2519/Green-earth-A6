@@ -1,169 +1,18 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-006
 
-### 📅 Deadline For 60 marks: 9th September, 2025 (11:59 pm ⏱️)
-
-### 📅 Deadline For 50 marks : 13th September , 2025 (6:00 pm⏱️)
-
-### 📅 Deadline For 30 marks: Any time after 13the September , 2025 (6:01 pm⏱️).
-
----
-# Green Earth
-
-
-## Private Repository: https://classroom.github.com/a/nVZrg5R9 
-
-## Alternative Private Repository: https://classroom.github.com/a/KCGI14ST 
-
-## Alternative Private Repository: https://classroom.github.com/a/JMuIYqgK 
-
-
----
-🌴 API Endpoints
----
-1. Get 🌴All Plants
-```bash
-https://openapi.programming-hero.com/api/plants
-```
-
-2. Get 🌴All categories <br/>
-```bash
-https://openapi.programming-hero.com/api/categories
-```
-
-
-3. Get 🌴plants by categories <br/>
-```bash
-https://openapi.programming-hero.com/api/category/${id}
-```
-
-```bash
-https://openapi.programming-hero.com/api/category/1
-```
-
-4. Get 🌴Plants Detail <br/>
-
-```bash
-https://openapi.programming-hero.com/api/plant/${id}
-```
-
-```bash
-https://openapi.programming-hero.com/api/plant/1
-```
----
-
-
-
-
-## ✅ Main Requirements 
-
-#### 1) Navbar
-
-- Website **logo/name** on the **left**  
-- **Menu items** in the **center** 
-- **Plant a Tree button** on the **right** 
-
-#### 2) Banner 
-- A **background image**  
-- A **title** and **subtitle**  
-- A **centered button**  
-
-#### 3) About Campaign
-- **Section heading**  
-- **Image on the left**, **text on the right**  
-
-#### 4) Our Impact Section 
-- Show **3 cards** with campaign **statistics**  
-
-#### 5) Plant a Tree Today Section & Footer
-- **Form**: Name, Email, Number of Trees  
-- **Footer** with copyright info 
-
-#### 6) Responsiveness 
-- Website must be **mobile responsive**  
-
----
 #### 7) Create a README file to answer the following question-
-
+------------------------------------------------------------------
 
 #### 1) What is the difference between var, let, and const?
+Ans: var is function-scoped, let and const are block-scoped. var has hoisting, let and const do not. let variables can be reassigned, const variables cannot be reassigned after initialization.
 
 #### 2) What is the difference between map(), forEach(), and filter()? 
+Ans: map(), forEach(), and filter() are all array methods in JavaScript used for iterating over elements, but they serve distinct purposes and produce different outcomes. forEach() is primarily used for iterating through an array to perform an action on each element, such as logging or modifying an external state, and it does not return a new array; its return value is always undefined. In contrast, map() is designed for transforming each element of an array and returns a new array containing the results of applying a provided callback function to every element, leaving the original array unchanged. Finally, filter() is used for creating a new array containing only the elements from the original array that satisfy a specified condition, which is evaluated by a callback function that must return a boolean value, effectively filtering out elements that do not meet the criteria. Therefore, forEach() is for side effects, map() is for transformation, and filter() is for selection.
 
 #### 3) What are arrow functions in ES6?
+Ans: Arrow functions are part of ES6 and give a syntactically shorter way of writing function expressions. 
 
 #### 4) How does destructuring assignment work in ES6?
+Ans: Destructuring assignment is a powerful feature in JavaScript introduced with ES6.It allows you to unpack values from arrays or properties from objects into distinct variables in a more concise and readable manner.
 
 #### 5) Explain template literals in ES6. How are they different from string concatenation?
-
-## ⚙️ Functionalities 
-
-1) Category Loading 
-Load Tree Categories dynamically on the left side.
-
-2) Category Click → Tree Data 
-On clicking a category: load trees of that category.
-
-Display in a 3-column card layout.
-
-3) Card Contents 
- Each card includes:
-
-        - Image
-
-        -  Name
-
-        - Short description
-
-        - Category
-
-        - Price
-
-        - Add to Cart button
-
-4) Modal on Card Click 
-Clicking a tree name on a card opens a modal with full tree details.
-
-
-##  🧪 Challenges 
-
-
-    1) Add to Cart 
-    Clicking Add to Cart: - Adds the tree to Cart List
-                          - Shows tree name 
-
-    2) Total Calculation 
-    Calculate total price of trees in cart.
-
-    3) Remove from Cart 
-    Clicking ❌ removes tree and deducts price from total.
-
-    4) Loading Spinner
-    Show spinner while data is loading.
-
-    5) Active Button State 
-    Highlight active category button when selected.
-
-
-
-🧰 Technology Stack:
-        
-        HTML
-
-        CSS (Vanilla / Tailwind / DaisyUI)
-
-        JavaScript (Vanilla only, no frameworks)
-
-📌 Rules
-✅ At least 5 meaningful commits
-
-❌ No dummy text or Lorem Ipsum — must use relevant content
-
-
-
-
-
-## 🔗 Submission
-- **Live Link :** YOUR_DEPLOYED_URL_HERE  
-- **GitHub Private Repository:** YOUR_REPO_URL_HERE  
-
----
+Ans: Template literals, introduced in ES6, are a modern way to work with strings in JavaScript. Unlike traditional strings that use single or double quotes, template literals use backticks (`\) and allow for string interpolation, meaning you can directly insert variables or expressions into the string using ${}. They also support multi-line strings without the need for \n, making it easier to write readable and clean code. For example, instead of concatenating strings with +, like "Hello, " + name + "!", you can write Hello, ${name}!. Template literals not only improve readability but also allow embedding any JavaScript expression inside the string, such as calculations or function calls. Overall, they are cleaner, more maintainable, and more powerful than traditional string concatenation, especially for complex strings or dynamic content.
