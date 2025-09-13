@@ -53,46 +53,40 @@
 </div>
 </header>
     <!-- banner -->
-   <section>
-  <div class="bg-green-200">
-    <!-- Text Section -->
-    <div class="text-center py-10 px-4">
-      <h1 class="font-bold text-3xl">Plant a Tree, Grow a Future</h1>
-      <p class="font-medium mt-4">
-        Join our mission to plant 1 million trees and make the Earth greener for
-        future generations.
-      </p>
-      <button
-        class="btn mt-4 rounded-3xl text-green-600 bg-yellow-300 font-semibold"
-      >
-        Get Involved
-      </button>
-    </div>
+<section class="relative bg-green-200 overflow-hidden">
+  
+  <img
+    src="./assets/hero-leaf1.png"
+    alt="Leaf 1"
+    class="hidden sm:block absolute left-0 top-1/2 transform -translate-y-1/2 w-32 sm:w-40 lg:w-48 object-cover"
+  />
+  <img
+    src="./assets/hero-leaf2.png"
+    alt="Leaf 2"
+    class="hidden sm:block absolute right-0 top-1/2 transform -translate-y-1/2 w-32 sm:w-40 lg:w-48 object-cover"
+  />
 
-    <!-- Image Section -->
-    <div
-      class="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-6 sm:gap-0 px-4 pb-10"
-    >
-      <img
-        class="w-full max-w-xs sm:w-80 sm:h-80"
-        src="./assets/hero-leaf1.png"
-        alt="Leaf 1"
-      />
-      <img
-        class="w-full max-w-xs sm:w-80 sm:h-80"
-        src="./assets/hero-leaf2.png"
-        alt="Leaf 2"
-      />
-    </div>
+  
+  <div class="flex flex-col items-center justify-center text-center py-20 px-4 sm:px-20">
+    <h1 class="font-bold text-3xl sm:text-4xl lg:text-5xl mb-4">
+      Plant a Tree, Grow a Future
+    </h1>
+    <p class="text-sm sm:text-base lg:text-lg max-w-xl mb-6">
+      Join our mission to plant 1 million trees and make the Earth greener for future generations.
+    </p>
+    <button class="btn rounded-3xl text-green-600 bg-yellow-300 font-semibold px-6 py-2">
+      Get Involved
+    </button>
   </div>
 </section>
+
 
    <!-- main -->
     <section class="bg-green-50  ">
  <!-- card section -->
   
         <section class=" w-11/12 mx-auto ">
-        <h1 class="font-bold text-center text-2xl  ">Choose Your Trees</h1>
+        <h1 class="font-bold text-center text-2xl p-10 ">Choose Your Trees</h1>
       <section class="grid grid-cols-12 gap-10 ">
       <!-- left -->
    <section class="col-span-2 "> <h1 class="font-bold text-xl">Categoris</h1> <div id = "categoris" > </div> </section>

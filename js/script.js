@@ -1,14 +1,10 @@
-// // ------------------------------
-// Variables
-// ------------------------------
+
 let cart = [];
 const categoriesContainer = document.getElementById("categoris");
 const cardContainer = document.getElementById("card");
 const cartContainer = document.getElementById("add-card");
 
-// ------------------------------
-// Fetch and display categories
-// ------------------------------
+
 const loadCategories = async () => {
   try {
     const res = await fetch("https://openapi.programming-hero.com/api/categories");
@@ -40,7 +36,7 @@ const displayCategories = (categories) => {
     categoriesContainer.appendChild(btn);
   });
 
-  // Highlight first category by default
+  
   const firstBtn = categoriesContainer.querySelector(".category-btn");
   if (firstBtn) {
     firstBtn.classList.add("bg-green-600", "text-white");
@@ -48,14 +44,12 @@ const displayCategories = (categories) => {
   }
 };
 
-// ------------------------------
-// Fetch and display plants
-// ------------------------------
+
 const loadPlants = async (id = "") => {
   try {
     const url = id
       ? `https://openapi.programming-hero.com/api/plants/${id}`
-      : "https://openapi.programming-hero.com/api/plants"; // all plants
+      : "https://openapi.programming-hero.com/api/plants"; 
     const res = await fetch(url);
     const data = await res.json();
     displayPlants(data.plants);
@@ -113,9 +107,7 @@ const displayPlants = (plants) => {
   });
 };
 
-// ------------------------------
-// Display cart
-// ------------------------------
+
 const displayCart = () => {
   cartContainer.innerHTML = "<h2 class='font-bold text-lg mb-3'>Your Cart</h2>";
 
@@ -152,8 +144,6 @@ const displayCart = () => {
   });
 };
 
-// ------------------------------
-// Initialize
-// ------------------------------
+
 loadCategories();
-loadPlants(); // show all plants by default
+loadPlants(); 
